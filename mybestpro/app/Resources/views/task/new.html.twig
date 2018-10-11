@@ -1,0 +1,17 @@
+{% include 'layout.html.twig' %}
+
+{% block body %}
+<div class="container body-container">
+  <h1>Crée votre tâche</h1>
+
+  {{ form_start(form) }}
+      {{ form_widget(form) }}
+  {{ form_end(form) }}
+
+  <ul class="list-group">
+      <li>
+          <a href="{{ path('HomePage') }}">Retourner à la liste</a>
+      </li>
+  </ul>
+</div>
+{% endblock %}
